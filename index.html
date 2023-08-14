@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(104, 104, 201);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info img {
+            margin-right: 5px;
+        }
+        @media screen and (max-width: 768px) {
+            /* Adjustments for mobile screens */
+            .firstSection {
+                flex-direction: column;
+                align-items: center;
+                margin: 60px 0;
+            }
+
+            .firstSection > div {
+                width: 80%;
+                text-align: center;
+            }
+
+            .rightSection img {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .leftSection .buttons {
+                padding: 30px 0;
+            }
+
+            .leftSection {
+                font-size: 2rem;
+            }
+
+            .footer {
+                flex-direction: column;
+                padding: 23px 10px;
+            }
+        }
+
+        /* Adjustments for larger screens */
+        @media screen and (min-width: 1200px) {
+            .firstSection {
+                margin: 130px 0;
+            }
+
+            .firstSection > div {
+                width: 30%;
+            }
+
+            /* Additional adjustments as needed for larger screens */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Saurav's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Saurav Kumar</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="window.location.href='https://github.com/saurav1kumar/Resume';">Download Resume</button>
+                    <button class="btn" onclick="window.location.href='https://github.com/saurav1kumar';">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="https://www.pngitem.com/pimgs/m/112-1127587_software-hire-developers-hd-png-download.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13tVtUNPoYzlvJvW9pHdlShXj1PGukVUSzg&usqp=CAU" alt="">
+                    <div class="vertical-title">
+                        Front-end Full Stack Developer (Jan-2023 - Present)
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Frontend: HTML5, CSS3, JavaScript, React, Angular</li>
+                            <li>Backend: Node.js, Python, MySQL, MongoDB</li>
+                            <li>Version Control: Git</li>
+                            <li>UI/UX: Responsive design, animations, cross-browser compatibility</li>
+                            <li>Continuous Learning: Staying updated with emerging trends</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13tVtUNPoYzlvJvW9pHdlShXj1PGukVUSzg&usqp=CAU" alt="">
+                    <div class="vertical-title">
+                        Java Full Stack Developer (Oct-2022 - Present)
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Frontend: HTML5, CSS3, JavaScript, React</li>
+                            <li>Backend: Java, Spring Boot, REST APIs</li>
+                            <li>Databases: MySQL, MongoDB</li>
+                            <li>Version Control: Git</li>
+                            <li>Deployment: Docker, AWS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13tVtUNPoYzlvJvW9pHdlShXj1PGukVUSzg&usqp=CAU" alt="">
+                    <div class="vertical-title">
+                        Internship (August 2021 – October 2021) SHREE TIRUPATI BALAJI INDUSTRIES PVT LTD UNIT-1
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Extensive training in production and quality departments at Parle Industries.</li>
+                            <li>Assisted in manufacturing, ensuring adherence to quality standards and efficiency.</li>
+                            <li>Operated and maintained machinery, contributing to process optimization.</li>
+                            <li>Collaborated with cross-functional teams, gaining insights into supply chain management.</li>
+                            <li>Deep understanding of quality control procedures and industry regulations.</li>
+                            <li>Applied college theory to real-world scenarios, laying a strong foundation for a manufacturing career.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13tVtUNPoYzlvJvW9pHdlShXj1PGukVUSzg&usqp=CAU" alt="">
+                    <div class="vertical-title">
+                        VOCATIONAL TRAINING (June 2020 – Jue 2020) BAJAJ HINDUSTHAN SUGAR LIMITED
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Enriching internship at a sugar mill, bridging theory and practice.</li>
+                            <li>Actively engaged in blending process, gaining insights into industry operations.</li>
+                            <li>Applied college learnings to solve real-world challenges, enhancing skills in optimization and teamwork.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13tVtUNPoYzlvJvW9pHdlShXj1PGukVUSzg&usqp=CAU" alt="">
+                    <div class="vertical-title">
+                        ACADEMIC LEVEL TRAINING (05 July 2021 – 30 July 2021) CENTRAL FARM MACHINERY TRAINING AND TESTING INSTITUTE
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Operation And Maintainance of Tractor and Agricultural Machinery</li>
+                            <li>Study of Various Working Systems of Tractor</li>
+                            <li>Study of Operation, Repair and Maintenance of hp Single Cylinder Diesel Engine</li>
+                            <li>Introduction of Tractor Testing Activities and Testing Procedure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-rights">
+            Copyright &#169; www.Saurav'sPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Java Full Stack Developer', 'Web Developer', 'Quick Learner'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
+   <!-- <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Saurav's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span class="contact-info">
+                            <img src="https://png.pngtree.com/png-vector/20201028/ourmid/pngtree-phone-icon-in-solid-circle-png-image_2380227.jpg"
+                                style="width: 20px; height: 20px" />
+                            <span class="contact-text">7491090069</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="contact-info">
+                            <img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png"
+                                alt="Gmail-icon" style="height: 20px;width: 20px;" />
+                            <span class="contact-text">blacksaura2@gmail.com</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>-->
+        <!-- <div class="footer-rights">
+            Copyright &#169; www.Saurav'sPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Java Full Stack Developer', 'Web Developer', 'Quick Learner'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html> 

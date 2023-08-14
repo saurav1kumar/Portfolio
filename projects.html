@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<style>
+    /* Projects Section */
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        padding: 50px 0;
+        background-color: #f0f2f5;
+        text-align: center;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+        color: #2b5876;
+        margin-bottom: 20px;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the items horizontally */
+    }
+
+    .vertical {
+        width: calc(33.33% - 20px); /* Adjust as needed for spacing */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px; /* Add some margin to separate the boxes */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #4db6ac;
+        color: #333333;
+    }
+
+    .vertical:hover {
+        transform: translateY(-5px);
+    }
+
+    .image-top {
+        width: 23px;
+        position: relative;
+        top: -16px;
+        left: -6px;
+    }
+
+    .vertical-title {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2b5876;
+    }
+
+    .vertical-desc {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #555555;
+        line-height: 1.4;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .box {
+            flex-direction: column; /* Stack boxes vertically on small screens */
+        }
+
+        .vertical {
+            width: 100%; /* Take full width on small screens */
+        }
+    }
+</style>
+<body>
+    <section class="secondSection">
+        <span class="text-gray">What I've Worked On</span>
+        <h1>Projects</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="https://project1_image_url" alt="">
+                <div class="vertical-title">
+                    Vehicle Management System
+                </div>
+                <div class="vertical-desc">
+                    <ul>
+                        <li>Developed a vehicle management system using Spring Boot.</li>
+                        <li>Implemented CRUD operations for vehicle details using Java and MySQL.</li>
+                        <li>Designed a user-friendly interface for adding, fetching, and deleting vehicle information.
+                        </li>
+                        <li>Utilized HTML, CSS, and Java for front-end and back-end development.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="https://project2_image_url" alt="">
+                <div class="vertical-title">
+                    Hospital Management System
+                </div>
+                <div class="vertical-desc">
+                    <ul>
+                        <li>Developed a web-based hospital management system.</li>
+                        <li>Implemented CRUD operations for patient and doctor details using Hibernate.</li>
+                        <li>Designed an intuitive user interface for managing hospital records and appointments.</li>
+                        <li>Technologies used: Java, Spring Boot, Hibernate, HTML, CSS, JavaScript.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="https://project3_image_url" alt="">
+                <div class="vertical-title">
+                    Digital Clock
+                </div>
+                <div class="vertical-desc">
+                    <ul>
+                        <li>Designed and developed a sleek digital clock using HTML5, CSS3, and JavaScript.</li>
+                        <li>Implemented a modern design with animations for a visually appealing user experience.</li>
+                        <li>Added functionality to accurately display and update the current time.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="https://project4_image_url" alt="">
+                <div class="vertical-title">
+                    Hydroponic System Design
+                </div>
+                <div class="vertical-desc">
+                    <ul>
+                        <li>Designed and developed a hydroponic system using PVC pipes for soilless cultivation of
+                            plants.</li>
+                        <li>Implemented various hydroponic techniques, including Nutrient Film Technique (NFT).</li>
+                        <li>Grew leafy vegetables like spinach in a controlled environment to conserve water resources.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="https://project5_image_url" alt="">
+                <div class="vertical-title">
+                    Low-Cost Battery Operated Wheel Sprayer
+                </div>
+                <div class="vertical-desc">
+                    <ul>
+                        <li>Developed a low-cost battery-operated wheel sprayer for efficient crop protection.</li>
+                        <li>Integrated advanced nozzle technology for precise spraying of crops.</li>
+                        <li>Optimized spray width and speed using data collection sensors.</li>
+                        <li>Contributed to sustainable agriculture by reducing chemical wastage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add more project sections as needed -->
+
+        </div>
+    </section>
+
+</body>
+
+</html>
